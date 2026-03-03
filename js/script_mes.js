@@ -9,38 +9,38 @@ if (mes = 1){
 }
 
     if(mes = 2){ 
-    alert("fevereiro");
+        alert("fevereiro");
     }
         if(mes = 3){ 
-        alert("março");
+            alert("março");
         }
             if(mes = 4){ 
-            alert("abril");
+                alert("abril");
             }
                 if(mes = 5){ 
-                alert("maio");
+                    alert("maio");
                 }
                     if(mes = 6){ 
-                    alert("junho");
+                        alert("junho");
                     }
                         if(mes = 7){ 
-                        alert("julho");
+                            alert("julho");
                         }
                             if(mes = 8){ 
-                            alert("agosto");
+                                alert("agosto");
                             }
-                                    if(mes = 9){ 
+                                if(mes = 9){ 
                                     alert("setembro");
                                     }
-                                        if(mes = 10){ 
+                                    if(mes = 10){ 
                                         alert("outubro");
-                                        }
-                                            if(mes = 11){ 
+                                    }
+                                        if(mes = 11){ 
                                             alert("novembro");
-                                            }
-                                                if(mes = 12){ 
+                                        }
+                                            if(mes = 12){ 
                                                 alert("dezembro");
-                                                }
+                                            }
 
 
    
