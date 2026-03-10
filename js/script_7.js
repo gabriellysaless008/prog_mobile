@@ -2,11 +2,11 @@
 
 let numero;
 
-numero = prompt ("Digite um numero qualquer: ");
+numero = prompt ( "Digite um numero qualquer: " );
 
-if ( numero > 1 || numero / numero || numero / 1){
-    alert("é um numero primo");
+if ( numero > 1 || numero / numero || numero / 1 ){
+    alert( "é um numero primo" );
 
 }else{
-    alert("ele não é um numero primo");
+    alert( "ele não é um numero primo" );
 }
