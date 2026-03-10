@@ -11,6 +11,8 @@ function calcular(){
 
     media = ( nota1 + nota2 + nota3 + nota4 )/4;
 
+    document.getElementById('resultado').innerHTML = media;
+
     console.log("Soma das notas:");
     console.log( nota1 );
     console.log( nota2 );
