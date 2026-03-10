@@ -4,17 +4,20 @@
 function calcular(){
     let media, nota1, nota2, nota3, nota4;
 
-    nota1 = document.getElementById( "nota1" ).value;
-    nota2 = document.getElementById( "nota2" ).value;
-    nota3 = document.getElementById( "nota3" ).value;
-    nota4 = document.getElementById( "nota4" ).value;
+    nota1 = Number( document.getElementById( "nota1" ).value );
+    nota2 = Number( document.getElementById( "nota2" ).value );
+    nota3 = Number( document.getElementById( "nota3" ).value );
+    nota4 = Number( document.getElementById( "nota4" ).value );
 
+    media = ( nota1 + nota2 + nota3 + nota4 )/4;
+
+    console.log("Soma das notas:");
     console.log( nota1 );
     console.log( nota2 );
     console.log( nota3 );
     console.log( nota4 );
-
-    media = ( nota1 + nota2 + nota3 + nota4 )/4;
+    console.log("Resultado:");
+    console.log( media );
 
 }
 
