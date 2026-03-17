@@ -4,7 +4,7 @@ function verifica_vogal(){
 
     letra = document.getElementById( "letra" ).value;
 
-    if ( letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u"){
+    if ( letra == "a" || letra == "A" || letra == "e" || letra == "E" || letra == "i" || letra == "I" || letra == "o" || letra == "O" || letra == "u" || letra == "U"){
         document.getElementById( 'resultado' ).innerHTML = "Vogal";
     } else {
         document.getElementById( 'resultado' ).innerHTML = "Consoante";
