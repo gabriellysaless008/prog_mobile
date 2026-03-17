@@ -8,6 +8,8 @@ function verifica_vogal(){
         document.getElementById( 'resultado' ).innerHTML = "Vogal";
     } else {
         document.getElementById( 'resultado' ).innerHTML = "Consoante";
-    }
+    } 
+
+    console.log(letra);
     
 }
