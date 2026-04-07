@@ -16,7 +16,7 @@ function calcular_media(){
     console.log( nome_aluno );
     console.log( media );
 
-    if ( resposta == "Sim" || "sim" ) {
+    if ( resposta == "S" ) {
         console.log("Continua");
     } else {
         console.log("Pare");
