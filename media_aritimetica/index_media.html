@@ -6,19 +6,22 @@
     <title>Calculo Média</title>
 </head>
 <body>
-    <h2>Nome do Aluno:</h2>
-    <input type="text" id="nome_aluno"><br><br>
+    <h3>Nome do Aluno:</h3>
+    <input type="text" id="nome_aluno" name="nome_aluno" placeholder="ex: Ana"><br><br>
 
-    <h4>Insira a primeira nota do primeiro bimestre:</h4>
-    <input type="text" id="nota1">
-    <h4>Insira a segunda nota do segundo bimestre:</h4>
-    <input type="text" id="nota2">
-    <h4>Insira a terceira nota do terceiro bimestre:</h4>
-    <input type="text" id="nota3">
-    <h4>Insira a quarta nota do quarto bimestre:</h4>
-    <input type="text" id="nota4">
+    <h4>Insira a primeira nota:</h4>
+    <input type="text" id="nota1" name="nota1" placeholder="Nota 1º trimestre">
+    
+    <h4>Insira a segunda nota:</h4>
+    <input type="text" id="nota2" name="nota2" placeholder="Nota 2º trimestre">
+    
+    <h4>Insira a terceira nota:</h4>
+    <input type="text" id="nota3" name="nota3" placeholder="Nota 3º trimestre">
+    
+    <!--<h4>Insira a nota do quarto trimestre:</h4>
+    <input type="text" name="nota4" id="nota4">-->
 
-    <button onclick="calcular_media()">Calcular media</button>
+    <button type="button" id="btn_calcular_media" onclick="calcular_media()">Calcular media</button>
     <label for="media" id="media"></label>
 
     <script src="script_media.js"></script>
