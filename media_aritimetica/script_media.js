@@ -2,7 +2,7 @@ function calcular_media(){
     
     let nota1, nota2, nota3;
     let media;
-    let nome_aluno;
+    let nome_aluno, resposta;
 
     nome_aluno = document.getElementById( "nome_aluno" ).value;
     nota1 = Number( document.getElementById( "nota1" ).value );
@@ -15,4 +15,10 @@ function calcular_media(){
     document.getElementById( "media" ).innerHTML = nome_aluno + " obteve uma media de: " + media;
     console.log( nome_aluno );
     console.log( media );
+
+    if ( resposta == "Sim" || "sim" ) {
+        console.log("Continua");
+    } else {
+        console.log("Pare");
+    }
 }
