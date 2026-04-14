@@ -1,0 +1,12 @@
+Todos os alunos
+	A quantidade que o usuario quiser
+
+Média Aritmética
+	Soma todos os termos e divide pela quantidade de termos
+
+De um aluno 
+
+Pergunta de deseja continuar
+	If (){
+	} else{
+	}
