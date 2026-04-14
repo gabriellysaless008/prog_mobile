@@ -1,5 +1,5 @@
 function calcular_media(){
-  //Referências aos elementos do HTML
+  // Referências aos elementos do HTML
     const nome_aluno = document.getElementById( "nome_aluno" );
     const nota1 = document.getElementById( "nota1" );
     const nota2 = document.getElementById( "nota2" );
@@ -15,28 +15,33 @@ function calcular_media(){
         let n2 = ParseFloat( nota2.value );
         let n3 = ParseFloat( nota3.value );
 
-        //Cálculo da média 3 notas
+        // Cálculo da média 3 notas
         let media = ( n1 + n2 + n3 ) / 3;
 
-        //Criando um elemento de texto para exibir o resultado na tela
+        // Criando um elemento de texto para exibir o resultado na tela
         const resultadoDiv = document.createElement( "div" );
         resultadoDiv.innerHTML = `<p><strong>Aluno:</strong>${nome}|<strong>Média:</strong>${media.toFixed(2)}</p>`;
         //                                                                                   adiciona casas no numero
         document.body.appendChild( resultadoDiv );
 
-        //Verifica a resposta do campo S/N
+        // Verifica a resposta do campo S/N
         continuar = resposta.value.charAt( 0 ).toUpperCase();
 
-        //Lógica de repetição:
-        //Se for 'S', limpamos os campos para o usuário digitar
-        //O próximo e o laço encerra sua volta atual.
+        // Lógica de repetição:
+        // Se for 'S', limpamos os campos para o usuário digitar
+        // O próximo e o laço encerra sua volta atual.
             if (continuar === 'S'){
                 nome_aluno.value = "";
                 nota1.value = "";
                 nota2.value = "";
                 nota3.value = "";
                 resposta.value = "";
+
+            //Damos foco no nome para a próxima digitação
+            nome_aluno.focus();
             }
+        // O break é necessário aqui pois, em ambiente web, o 'do..while' não pode pausar a CPU esperando o usuario digitar
+        // Ele processa a entranda atual e libera para a próxima interação do botão.
 
         document.getElementById( "media" ).innerHTML = nome_aluno + " obteve uma media de: " + media;
         console.log( nome_aluno );
